@@ -131,12 +131,11 @@ h2 {
   font-weight: 500;
 }
 
-.intro_photo {
-  width: 30%;
-}
-
 .intro_photo img {
   border-radius: 12px;
+  width: 100%; /*-- zajišťuje , že obrázek bude využívat vždy celou šířku rodičovského elementu --*/
+  height: auto; /*-- výška se automaticky upraví podle šířky při zachování poměru stran  */
+  max-width: 100%; /*-- zajistí, že obrázek nikdy nebude větší než rodičovský element */
 }
 
 /* --- section services --- */
@@ -193,9 +192,17 @@ h2 {
   font-weight: 500;
 }
 
+.service-page_photo {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 .service-page_photo img {
   border-radius: 12px;
   margin: 40px 0 50px 0;
+  width: 100%; /*-- zajišťuje , že obrázek bude využívat vždy celou šířku rodičovského elementu --*/
+  height: auto; /*-- výška se automaticky upraví podle šířky při zachování poměru stran  */
+  max-width: 100%; /*-- zajistí, že obrázek nikdy nebude větší než rodičovský element */
 }
 
 .service-page_article p {
@@ -271,7 +278,7 @@ h2 {
 .main_contacts-wrapper {
   display: flex;
   justify-content: space-evenly;
-  margin: 100px 0 60px 210px;
+  margin: 100px 0 60px 0;
   line-height: 2.9em;
   height: 400px;
 }
@@ -316,5 +323,3 @@ footer {
   background-color: rgb(242, 253, 247);
   padding-bottom: 10px;
 }
-
-
