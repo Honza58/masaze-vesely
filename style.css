@@ -52,9 +52,12 @@ li a {
 /* --- header title logo(index) --- */
 
 header {
+  padding: 30px;
   background-color: rgb(242, 253, 247);
   text-align: center;
 }
+
+
 
 .header_icon {
   margin: 0 0 20px 0;
@@ -66,17 +69,52 @@ header {
   font-size: 3.2em;
 }
 
+
+/* --hamburger menu + close -- */
+.menu-close {
+  position: relative;
+}
+
+.hamburger-menu {
+  width: 24px;
+  height: 24px;
+  display: none;
+
+}
+
+.close {
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+/* -- vytvoření tříd pro přepínání viditelnosti a skrytí elementů -- */
+
+.block {
+  display: block !important;
+}
+
+.none {
+  display: none !important;
+}
+
 /* --- navigation --- */
 
 .main-nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateX(0); /* přidáme transform, ale necháme menu viditelné */
 }
 
 .main-nav li {
   list-style-type: none;
   margin: 50px 20px 20px;
+  display: block;
+}
+
+/* -- .main-nav .mobile-contact dáváme jen kvůli tomu, aby se v desktop verzi nezobrazily kontakty jak div => top-bar a kvůli vyšší specifičnosti */
+.main-nav .mobile-contact {
+  display: none;
 }
 
 .main-nav li a {
@@ -87,6 +125,12 @@ header {
 
 .main-nav li :hover {
   background-color: rgb(150, 218, 186);
+}
+/* --přidáme třídu active, pro orientaci na které stránce se právě nacházíme pomocí javascriptu-- */
+.main-nav a.active {
+  background-color: rgb(150, 218, 186);
+  border-radius: 5px;
+  font-weight: 600;
 }
 
 /* --- main sekce --- */
@@ -284,7 +328,7 @@ h2 {
 }
 
 .contacts_left {
-  width: 25%;
+  width: 30%;
 }
 
 .contacts_left p {
@@ -292,7 +336,7 @@ h2 {
 }
 
 .contacts_right {
-  width: 25%;
+  width: 30%;
 }
 
 .main_contacts-wrapper h2 {
