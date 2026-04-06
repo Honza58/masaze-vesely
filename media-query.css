@@ -66,11 +66,16 @@
   .services_right {
     width: 70%;
   }
+
   /* --price page-- */
   .price-page_price-list {
     width: 80%;
     margin: 50px auto; /* vycentruje blok */
     text-align: center; /* vycentruje text */
+  }
+
+  .service-page_article {
+    width: 70%;
   }
 
   .price-list_classic-massage p,
