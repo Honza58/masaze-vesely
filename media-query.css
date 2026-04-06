@@ -42,7 +42,7 @@
     font-size: 80%;
   }
 
-  .intro_content  {
+  .intro_content {
     width: 70%;
   }
 
@@ -61,8 +61,13 @@
     align-items: center;
   }
 
-  .services_left, .services_right {
+  .services_left,
+  .services_right {
     width: 70%;
+  }
+
+  .price-page_price-list {
+    width: 80%;
   }
 
   /* --zobrazujeme kontakty ve vyjížděcím menu (kontakty stejné jako v úplně nahoře v div => top-bar */
