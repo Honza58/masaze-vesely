@@ -82,9 +82,11 @@
   .main_contacts-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 70%;
   }
+.contacts_right, .contacts_left {
+  width: 70%;
+}
+
 
   /* --zobrazujeme kontakty ve vyjížděcím menu (kontakty stejné jako v div => top-bar (úplně nahoře)*/
   .main-nav .mobile-contact {
