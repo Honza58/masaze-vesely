@@ -137,7 +137,6 @@ header {
   display: flex;
   justify-content: center;
   gap: 80px;
-  
 }
 
 .intro_content {
@@ -255,8 +254,9 @@ h2 {
 /* --- classic massage --- */
 
 .price-page_price-list {
-  width: 80%;
+  width: 60%;
   font-size: 1.1em;
+  margin: 50px auto;
 }
 
 .price-page_title {
@@ -269,11 +269,6 @@ h2 {
 
 .price-page_price-list h2 {
   font-weight: 400;
-}
-
-.price-page_price-list {
-  margin: 50px auto;
-  width: 50%;
 }
 
 .price-list_classic-massage {
