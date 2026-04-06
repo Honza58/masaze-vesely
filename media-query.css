@@ -1,4 +1,5 @@
 @media (max-width: 768px) {
+  /* --nadpis - logo - navigace */
   header {
     position: relative;
   }
@@ -38,9 +39,7 @@
     display: none;
   }
 
-  .contacts_right li {
-    font-size: 80%;
-  }
+  /* -- mobilní verze obsahu -- */
 
   .intro_content {
     width: 70%;
@@ -49,12 +48,14 @@
   .intro_photo {
     max-width: 350px;
   }
+
+  /* --intro page-- */
   .main_intro-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
+  /* --intro service pages-- */
   .main_services-wrapper {
     display: flex;
     flex-direction: column;
@@ -66,11 +67,26 @@
     width: 70%;
   }
 
+  /* --price page-- */
   .price-page_price-list {
     width: 80%;
   }
 
-  /* --zobrazujeme kontakty ve vyjížděcím menu (kontakty stejné jako v úplně nahoře v div => top-bar */
+  .price-list_classic-massage p,
+  .price-list_traffic p {
+    width: 100%;
+  }
+
+  /* --contact page-- */
+
+  .main_contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+  }
+
+  /* --zobrazujeme kontakty ve vyjížděcím menu (kontakty stejné jako v div => top-bar (úplně nahoře)*/
   .main-nav .mobile-contact {
     display: block;
     margin-bottom: 20px;
