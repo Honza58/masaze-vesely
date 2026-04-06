@@ -222,7 +222,7 @@ h2 {
 /* --- service page --- */
 
 .service-page_article {
-  width: 70%;
+  width: 50%;
   margin: 100px auto;
   text-align: center;
 }
@@ -246,7 +246,7 @@ h2 {
 }
 
 .service-page_article p {
-  margin: 20px 0 20px 0;
+  margin: 20px 0;
   text-align: justify;
 }
 
