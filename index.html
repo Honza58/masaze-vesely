@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-query.css" />
     <title>Úvod</title>
   </head>
 
@@ -33,6 +34,11 @@
 
       <!-- Nadpis + logo + navigace -->
       <header>
+        <div class="menu-close">
+          <div class="hamburger-menu"><img src="img/hamburger-menu.png" alt="" /></div>
+          <div class="close"><img src="img/close.png" alt="" /></div>
+        </div>
+
         <div class="header_icon">
           <img src="img/logo_blue_purple.png" alt="" />
         </div>
@@ -43,6 +49,22 @@
             <li><a href="sluzby.html" target="_blank">Služby</a></li>
             <li><a href="cenik.html" target="_blank">Ceník</a></li>
             <li><a href="kontakt.html" target="_blank">Kontakt</a></li>
+            <!-- mobile-contact-ve vyjížděcím menu -->
+            <li class="mobile-contact">
+              <span>
+                <img src="img/icon-info.png" alt="" />
+                Jan Veselý
+              </span>
+              <span>
+                <img src="img/icon-telephone.png" alt="" />
+                723 555 280
+              </span>
+              <span>
+                <img src="img/icon-envelope.png" alt="" />
+                relaxace.vesely@seznam.cz
+              </span>
+            </li>
+            <!-- konec=> mobile-contact-ve vyjížděcím menu -->
           </ul>
         </nav>
       </header>
@@ -116,5 +138,6 @@
       <!-- footer -->
       <footer><span class="footer">Vytvořeno &copy; Jan Veselý &middot; 2026 &middot;</span></footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
