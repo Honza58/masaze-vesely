@@ -57,8 +57,6 @@ header {
   text-align: center;
 }
 
-
-
 .header_icon {
   margin: 0 0 20px 0;
   padding-top: 15px;
@@ -69,7 +67,6 @@ header {
   font-size: 3.2em;
 }
 
-
 /* --hamburger menu + close -- */
 .menu-close {
   position: relative;
@@ -79,7 +76,6 @@ header {
   width: 24px;
   height: 24px;
   display: none;
-
 }
 
 .close {
@@ -140,8 +136,8 @@ header {
   margin-top: 100px;
   display: flex;
   justify-content: center;
-  gap: 200px;
-  height: 600px;
+  gap: 80px;
+  
 }
 
 .intro_content {
@@ -190,7 +186,8 @@ h2 {
   justify-content: space-evenly;
   background-color: rgb(242, 253, 247);
   padding: 150px 0 0 0;
-  height: 600px;
+
+  /* height: 600px; */
 }
 
 .services_left {
@@ -198,7 +195,7 @@ h2 {
 }
 
 .services_right {
-  width: 40%;
+  width: 30%;
   text-align: justify;
 }
 
@@ -215,7 +212,7 @@ h2 {
   background-color: rgb(150, 218, 186);
   border-radius: 9px;
   font-weight: 600;
-  margin-left: 100px;
+  margin: 0 0 50px 100px;
   text-decoration: none;
 }
 
@@ -322,13 +319,14 @@ h2 {
 .main_contacts-wrapper {
   display: flex;
   justify-content: space-evenly;
+  /* gap: 10%; */
   margin: 100px 0 60px 0;
   line-height: 2.9em;
   height: 400px;
 }
 
 .contacts_left {
-  width: 30%;
+  width: 40%;
 }
 
 .contacts_left p {
@@ -336,7 +334,12 @@ h2 {
 }
 
 .contacts_right {
-  width: 30%;
+  width: 40%;
+}
+
+.contacts_right li {
+  max-width: 100%;
+  overflow-wrap: anywhere; /*--zajistí zalamování textu v elementu--*/
 }
 
 .main_contacts-wrapper h2 {
